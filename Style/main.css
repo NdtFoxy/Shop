@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(/Img/pexels-stephan-seeber-1261728.jpg);
+    background-size: cover;
+}
+
+.row{
+    padding: 100px;
+    width: 2000px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.Laptop{
+
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.col{
+    background:rgb(255, 255, 255);
+    width: 500px;
+    height: 600px;
+    margin: 30px;
+    border-radius: 10%;
+    border:5px solid #ffbb91;
+}
+
+.up{
+    color: #ff8e6e;
+
+}
+
+.up-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    background:#515070;
+    border-radius:10%;
+    top:160px;
+    margin-left: 290px;
+}
+
+h1{
+    font-size: 28px;
+    color:#ffffff;
+}
+
+.mid-div{
+    position: absolute;
+    top: 380px;
+    width:200px ;
+    height:50px ;
+    background: #e84a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10%;
+}
+
+.REV{
+    position: absolute;
+    top:390px;
+    margin-left: 250px;
+    color:darkgray;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p{
+    position: absolute;
+    top: 450px;
+    font-size: 15.5px;
+}
+
+button{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 580px;
+    margin-left: 30px;
+    border: 5px solid #e84a5f;
+    border-radius: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    background: #ff847c;
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    border: 5px solid #ff847c;
+    background: #e84a5f;
+}
+
+.Heart{
+    position: absolute;
+    top: 670px;
+    margin-left: 300px;
+    width: 1.4%;
+}
+
+.Text{
+    position: absolute;
+    top: 670px;
+    margin-left: 40px;
+    width: 1.4%;
+}
+
+.REV:hover{
+    color: #000;
+}
+
+.up:hover{
+    color: #e84a5f;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}
