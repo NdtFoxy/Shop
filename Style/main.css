@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: url(/Img/pexels-stephan-seeber-1261728.jpg);
+    background: url(/Img/big-sur-mountains-clouds-sunrise-morning-macos-big-sur-6016x6016-1497.jpg);
     background-size: cover;
 }
 
@@ -29,7 +29,7 @@ body{
 .col{
     background:rgb(255, 255, 255);
     width: 500px;
-    height: 600px;
+    height: 620px;
     margin: 30px;
     border-radius: 10%;
     border:5px solid #ffbb91;
@@ -106,16 +106,24 @@ button:hover{
 
 .Heart{
     position: absolute;
-    top: 670px;
-    margin-left: 300px;
-    width: 1.4%;
+    top: 653px;
+    margin-left: 270px;
+    font-size: 35px;
+}
+
+.Heart:hover{
+color: rgb(255, 0, 0);
 }
 
 .Text{
     position: absolute;
-    top: 670px;
-    margin-left: 40px;
-    width: 1.4%;
+    top: 653px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+.Text:hover{
+color: #ff847c;
 }
 
 .REV:hover{
@@ -129,4 +137,166 @@ button:hover{
 .container-fluid{
     display: flex;
     justify-content: center;
+}
+.mid-div{
+    overflow: hidden;
+}
+.mid-div:hover .flare{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg);
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 3s infinite linear; 
+    margin-left: 220px;
+}
+
+
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+
+.pulse {
+    position: relative;
+    text-align: center; 
+    padding: 20px; 
+    border-radius: 50%; 
+    width: 80px;
+    height: 80px;
+}
+
+  .pulse:hover::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #e84a5f;
+    left: -20px;
+    opacity: 0;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 2.5s linear infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+
+  .pulse:hover::after,.pulse:hover::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #e84a5f;
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+}
+
+.pulse:hover::after {
+  animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+
+.pulse-2 {
+    position: relative;
+    text-align: center; 
+    padding: 20px; 
+    border-radius: 50%; 
+    width: 80px;
+    height: 80px;
+}
+
+.pulse-2:hover::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #ff847c;
+    left: -20px;
+    opacity: 0;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse-2 2.5s linear infinite;
+  }
+
+  @keyframes pulse-2 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+
+  .pulse-2:hover::after, .pulse-2:hover::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff847c;
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse-2 2.5s linear infinite;
+}
+
+.pulse-2:hover::after {
+  animation-delay: 1.25s;
+}
+
+@keyframes pulse-2 {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
 }
